@@ -14,7 +14,7 @@ touch .eslintrc
 ### step 3
 to add rules in .eslintrc
 
-```
+```json
 {
   "parser": "babel-eslint",
     "env": {
