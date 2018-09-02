@@ -48,6 +48,7 @@ to add rules in .eslintrc
     "semi": ["error", "never"],
     "spaced-comment": 0,
     "comma-dangle": ["error", "never"],
+    "react/prop-types": 0,
     "no-extra-boolean-cast": 0
   },
   "globals": {
