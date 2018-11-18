@@ -1,7 +1,10 @@
 {
-  "devDependencies": {
-    "babel-eslint": "^8.2.6",
-    "eslint": "^5.4.0",
-    "eslint-plugin-react": "^7.11.1"
+    "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start-ios": "react-native run-ios --simulator='iPhone SE' && npm run lint-watch",
+    "start-android": "react-native run-android && npm run lint-watch",
+    "lint": "esw src/**",
+    "lint-watch": "esw -w --changed src/**",
+    "test": "jest"
   }
 }
