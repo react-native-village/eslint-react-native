@@ -1,31 +1,42 @@
 {
   "parser": "babel-eslint",
-    "env": {
-      "browser": true
-    },
-    "plugins": [
-      "react"
-    ],
-    "extends": [
-      "eslint:recommended",
-      "plugin:react/recommended"
-    ],
-    "rules": {
-			"strict": 0,
-			"arrow-body-style": 0, 
-			"no-unused-expressions": ["error", { "allowTernary": true }],
-			"no-console": 0,
-			"react/jsx-uses-react": "error",
-			"react/jsx-uses-vars": "error",
-			"indent": ["error", 2],
-			"linebreak-style": [ "error", "unix" ],
-			"quotes": [ "error", "single" ],
-			"semi": [ "error", "never" ],
-			"spaced-comment": 0,
-			"max-len": 0,
-			"camelcase": 0,
-			"comma-dangle": ["error", "never"],
-			"object-curly-spacing": 0,
-			"no-nested-ternary": 0
-    }
+  "extends": "airbnb",
+  "plugins": ["react", "jsx-a11y", "import"],
+  "rules": {
+    "react/jsx-filename-extension": ["off"],
+    "react/jsx-one-expression-per-line": 0,
+    "linebreak-style": ["off"],
+    "no-undef": ["error"],
+    "react/sort-comp": ["off"],
+    "react/prefer-stateless-function": ["off"],
+    "react/destructuring-assignment": 1,
+    "semi": ["error", "never"],
+    "spaced-comment": 0,
+    "comma-dangle": ["error", "never"],
+    "react/prop-types": 0,
+    "no-extra-boolean-cast": 0,
+    "quote-props": 0,
+    "object-curly-spacing": ["error", "always"],
+    "camelcase": 0,
+    "no-nested-ternary": 0,
+    "object-curly-newline": 0,
+    "operator-linebreak": 0,
+    "global-require": 0,
+    "max-len": 0,
+    "import/no-cycle": 0,
+    "no-underscore-dangle": 0,
+    "no-return-assign": 0,
+    "import/prefer-default-export": 0,
+    "no-console": "error"
+  },
+  "globals": {
+    "it": 0,
+    "expect": 0,
+    "describe": 0,
+    "navigator": 0
+  },
+  "import/no-extraneous-dependencies": [
+    "error",
+    { "devDependencies": ["**/*.test.js", "test-config/*.js"] }
+  ]
 }
