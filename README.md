@@ -10,20 +10,8 @@ create .eslintrc.json
 ```
 touch .eslintrc.json
 ```
-### step 3
-Open up your package.json and make the following updates.
- ``` 
-"scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "start-ios": "react-native run-ios --simulator='iPhone SE' && npm run lint-watch",
-    "start-android": "react-native run-android && npm run lint-watch",
-    "lint": "esw src/**",
-    "lint-watch": "esw -w --changed src/**",
-    "test": "jest"
-  },
-```
 
-### step 4
+### step 3
 to add rules in .eslintrc.json
 
 ```json
@@ -50,6 +38,7 @@ to add rules in .eslintrc.json
     "no-nested-ternary": 0,
     "object-curly-newline": 0,
     "operator-linebreak": 0,
+    "no-unused-expressions": 0,
     "global-require": 0,
     "max-len": 0,
     "import/no-cycle": 0,
@@ -65,6 +54,19 @@ to add rules in .eslintrc.json
     "navigator": 0
   }
 }
+```
+
+### step 4
+Open up your package.json and make the following updates.
+ ``` 
+"scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start-ios": "react-native run-ios --simulator='iPhone SE' && npm run lint-watch",
+    "start-android": "react-native run-android && npm run lint-watch",
+    "lint": "esw src/**",
+    "lint-watch": "esw -w --changed src/**",
+    "test": "jest"
+  },
 ```
 
 ### done
