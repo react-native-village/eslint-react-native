@@ -63,11 +63,7 @@ to add rules in .eslintrc.json
     "expect": 0,
     "describe": 0,
     "navigator": 0
-  },
-  "import/no-extraneous-dependencies": [
-    "error",
-    { "devDependencies": ["**/*.test.js", "test-config/*.js"] }
-  ]
+  }
 }
 ```
 
