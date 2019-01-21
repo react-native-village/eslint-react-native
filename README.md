@@ -70,7 +70,7 @@ Open up your package.json and make the following updates.
 ```
 
 ### step 5
-create folder `src` and to transfer flie src/App.js
+create folder `src` and to transfer flie `src/App.js`
 
 ### step 6
 restart project 
