@@ -80,10 +80,26 @@ Open up your package.json and make the following updates.
 }
 ```
 
+
 ### step 5
-create folder `src` and to transfer flie `src/App.js`
+Create `.prettier` 
+``` 
+{
+  "singleQuote": true,
+  "printWidth": 120,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "bracketSpacing": true,
+  "semi": false,
+  "useTabs": false,
+  "jsxBracketSameLine": false
+}
+```
 
 ### step 6
+create folder `src` and to transfer flie `src/App.js`
+
+### step 7
 restart project 
 `yarn start-ios`
 or
