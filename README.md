@@ -60,7 +60,6 @@ to add rules in .eslintrc.json
 Open up your package.json and make the following updates.
  ``` 
 "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
     "start-ios": "react-native run-ios --simulator='iPhone SE' && npm run lint-watch",
     "start-android": "react-native run-android && npm run lint-watch",
     "lint": "esw src/**",
