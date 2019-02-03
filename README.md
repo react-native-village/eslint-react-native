@@ -82,7 +82,7 @@ Open up your package.json and make the following updates.
 
 
 ### step 5
-Create `.prettierrc` 
+Create `touch .prettierrc` 
 ``` 
 {
   "singleQuote": true,
