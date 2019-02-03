@@ -2,7 +2,7 @@
 
 ### step 1
 ```
- yarn add eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-watch babel-core babel-eslint babel-preset-airbnb babel-preset-react-native -D
+ yarn add eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-watch babel-core babel-eslint babel-preset-airbnb babel-preset-react-native pre-commit prettier prettier-eslint eslint-plugin-prettier eslint-config-prettier -D
 ```
 
 ### step 2
@@ -64,9 +64,21 @@ Open up your package.json and make the following updates.
     "start-ios": "react-native run-ios --simulator='iPhone SE' && npm run lint-watch",
     "start-android": "react-native run-android && npm run lint-watch",
     "lint": "esw src/**",
-    "lint-watch": "esw -w --changed src/**",
-    "test": "jest"
+    "lint-watch": "esw -w --changed src/**"
   },
+"precommit": [
+    "lint"
+],
+"prettier": {
+    "singleQuote": true,
+    "printWidth": 120,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "semi": false,
+    "useTabs": false,
+    "jsxBracketSameLine": false
+}
 ```
 
 ### step 5
@@ -75,6 +87,7 @@ create folder `src` and to transfer flie `src/App.js`
 ### step 6
 restart project 
 `yarn start-ios`
-
+or
+`yarn start-android`
 
 ### done
