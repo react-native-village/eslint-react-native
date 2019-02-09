@@ -1,4 +1,4 @@
-# eslint-react-native
+# eslint + prettierrc
 
 ### step 1
 ```
