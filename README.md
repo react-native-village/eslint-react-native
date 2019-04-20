@@ -2,7 +2,7 @@
 
 ### step 1
 ```
- yarn add eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-watch babel-core babel-eslint babel-preset-airbnb babel-preset-react-native pre-commit prettier prettier-eslint eslint-plugin-prettier eslint-config-prettier -D
+ yarn add eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-watch babel-core babel-eslint babel-preset-airbnb babel-preset-react-native pre-commit prettier prettier-eslint eslint-plugin-prettier eslint-config-prettier eslint-plugin-react eslint-plugin-react-native -D
 ```
 
 ### step 2
@@ -18,8 +18,21 @@ to add rules in .eslintrc.json
 {
   "parser": "babel-eslint",
   "extends": "airbnb",
-  "plugins": ["react", "jsx-a11y", "import"],
+  "plugins": ["react", "react-native", "jsx-a11y", "import"],
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      }
+  },
+  "env": {
+    "react-native/react-native": true
+  },
   "rules": {
+    "react-native/no-unused-styles": 2,
+    "react-native/split-platform-components": 2,
+    "react-native/no-inline-styles": 2,
+    "react-native/no-color-literals": 2,
+    "react-native/no-raw-text": 2,
     "react/jsx-filename-extension": ["off"],
     "react/jsx-one-expression-per-line": 0,
     "linebreak-style": ["off"],
