@@ -61,6 +61,7 @@ to add rules in .eslintrc.json
     "no-console": "error"
   },
   "globals": {
+    "fetch": false,
     "it": 0,
     "expect": 0,
     "describe": 0,
@@ -78,9 +79,7 @@ Open up your package.json and make the following updates.
     "lint": "esw src/**",
     "lint-watch": "esw -w --changed src/**"
   },
-"precommit": [
-    "lint"
-],
+"precommit": "lint",
 "prettier": {
     "singleQuote": true,
     "printWidth": 120,
