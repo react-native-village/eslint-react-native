@@ -1,8 +1,21 @@
 {
   "parser": "babel-eslint",
   "extends": "airbnb",
-  "plugins": ["react", "jsx-a11y", "import"],
+  "plugins": ["react", "react-native", "jsx-a11y", "import"],
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      }
+  },
+  "env": {
+    "react-native/react-native": true
+  },
   "rules": {
+    "react-native/no-unused-styles": 0,
+    "react-native/split-platform-components": 0,
+    "react-native/no-inline-styles": 0,
+    "react-native/no-color-literals": 0,
+    "react-native/no-raw-text": 2,
     "react/jsx-filename-extension": ["off"],
     "react/jsx-one-expression-per-line": 0,
     "linebreak-style": ["off"],
@@ -18,10 +31,10 @@
     "quote-props": 0,
     "object-curly-spacing": ["error", "always"],
     "camelcase": 0,
-    "arrow-parens": 0,
     "no-nested-ternary": 0,
     "object-curly-newline": 0,
     "operator-linebreak": 0,
+    "no-unused-expressions": 0,
     "global-require": 0,
     "max-len": 0,
     "import/no-cycle": 0,
@@ -31,6 +44,7 @@
     "no-console": "error"
   },
   "globals": {
+    "fetch": false,
     "it": 0,
     "expect": 0,
     "describe": 0,
