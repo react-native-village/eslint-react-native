@@ -20,22 +20,18 @@ to add rules in .eslintrc.json
   "extends": "airbnb",
   "plugins": ["react", "react-native", "jsx-a11y", "import"],
   "parserOptions": {
-      "ecmaFeatures": {
-          "jsx": true
-      }
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "env": {
     "react-native/react-native": true
   },
   "rules": {
-    "react-native/no-unused-styles": 0,
-    "react-native/split-platform-components": 0,
-    "react-native/no-inline-styles": 0,
-    "react-native/no-color-literals": 0,
-    "react-native/no-raw-text": 2,
     "react/jsx-filename-extension": ["off"],
     "react/jsx-one-expression-per-line": 0,
     "linebreak-style": ["off"],
+    "implicit-arrow-linebreak": 0,
     "no-undef": ["error"],
     "react/sort-comp": ["off"],
     "react/prefer-stateless-function": ["off"],
@@ -49,6 +45,7 @@ to add rules in .eslintrc.json
     "object-curly-spacing": ["error", "always"],
     "camelcase": 0,
     "no-nested-ternary": 0,
+    "react/jsx-wrap-multilines": 0,
     "object-curly-newline": 0,
     "operator-linebreak": 0,
     "no-unused-expressions": 0,
@@ -58,14 +55,32 @@ to add rules in .eslintrc.json
     "no-underscore-dangle": 0,
     "no-return-assign": 0,
     "import/prefer-default-export": 0,
-    "no-console": "error"
+    "jsx-quotes": ["error", "prefer-double"],
+    "no-console": "error",
+    "arrow-parens": 0,
+    "eol-last": 0,
+    "react/destructuring-assignment": 0,
+    "react-native/no-unused-styles": 0,
+    "react-native/split-platform-components": 0,
+    "react-native/no-inline-styles": 0,
+    "react-native/no-color-literals": 0,
+    "react-native/no-raw-text": 0,
+    "consistent-return": 0
   },
   "globals": {
-    "fetch": false,
     "it": 0,
     "expect": 0,
     "describe": 0,
-    "navigator": 0
+    "navigator": 0,
+    "Headers": false,
+    "fetch": false
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ios.js", ".android.js"]
+      }
+    }
   }
 }
 ```
