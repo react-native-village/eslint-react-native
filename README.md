@@ -89,8 +89,8 @@ to add rules in .eslintrc.json
 Open up your package.json and make the following updates.
  ``` 
 "scripts": {
-    "start-ios": "react-native run-ios --simulator='iPhone SE' && npm run lint-watch",
-    "start-android": "react-native run-android && npm run lint-watch",
+    "ios": "react-native run-ios --simulator='iPhone SE' && npm run lint-watch",
+    "android": "react-native run-android && npm run lint-watch",
     "lint": "esw src/**",
     "lint-watch": "esw -w --changed src/**"
   },
