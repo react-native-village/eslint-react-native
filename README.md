@@ -36,6 +36,7 @@ to add rules in .eslintrc.json
     "react/sort-comp": ["off"],
     "react/prefer-stateless-function": ["off"],
     "react/destructuring-assignment": 1,
+    "function-paren-newline": "multiline",
     "semi": ["error", "never"],
     "spaced-comment": 0,
     "comma-dangle": ["error", "never"],
