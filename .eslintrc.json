@@ -18,6 +18,7 @@
     "no-undef": ["error"],
     "react/sort-comp": ["off"],
     "react/prefer-stateless-function": ["off"],
+    "function-paren-newline": "multiline",
     "react/destructuring-assignment": 1,
     "semi": ["error", "never"],
     "spaced-comment": 0,
