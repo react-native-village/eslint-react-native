@@ -68,14 +68,6 @@ to add rules in .eslintrc.json
     "react-native/no-raw-text": 0,
     "consistent-return": 0
   },
-  "globals": {
-    "it": 0,
-    "expect": 0,
-    "describe": 0,
-    "navigator": 0,
-    "Headers": false,
-    "fetch": false
-  },
   "settings": {
     "import/resolver": {
       "node": {
