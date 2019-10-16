@@ -112,10 +112,10 @@ Open up your package.json and make the following updates.
 },
 ```
 
-### step 6
+### step 5
 create folder `src` and to transfer flie `src/index.js`
 
-### step 7
+### step 6
 restart project 
 `yarn start-ios`
 or
