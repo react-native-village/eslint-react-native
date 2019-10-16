@@ -97,7 +97,7 @@ Open up your package.json and make the following updates.
     "semi": false,
     "useTabs": false,
     "jsxBracketSameLine": false
-}
+},
 ```
 
 
