@@ -94,7 +94,7 @@ module.exports = {
 Open up your package.json and make the following updates.
  ``` 
 "scripts": {
-    "ios": "react-native run-ios --simulator='iPhone SE' && npm run lint-watch",
+    "ios": "react-native run-ios --simulator='iPhone SE'",
     "android": "react-native run-android && npm run lint-watch",
     "lint": "esw src/**",
     "lint-watch": "esw -w --changed src/**"
