@@ -6,77 +6,89 @@
 ```
 
 ### step 2
-create .eslintrc.json
-```
-touch .eslintrc.json
-```
+edit .eslintrc.js 
 
-### step 3
-to add rules in .eslintrc.json
-
-```json
-{
-  "parser": "babel-eslint",
-  "extends": "airbnb",
-  "plugins": ["react", "react-native", "jsx-a11y", "import"],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
+```js
+module.exports = {
+  root: true,
+  parser: 'babel-eslint',
+  extends: 'airbnb',
+  plugins: ['react', 'react-native', 'jsx-a11y', 'import'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
     }
   },
-  "env": {
-    "react-native/react-native": true
+  env: {
+    'react-native/react-native': true
   },
-  "rules": {
-    "react/jsx-filename-extension": ["off"],
-    "react/jsx-one-expression-per-line": 0,
-    "linebreak-style": ["off"],
-    "implicit-arrow-linebreak": 0,
-    "no-undef": ["error"],
-    "react/sort-comp": ["off"],
-    "react/prefer-stateless-function": ["off"],
-    "react/destructuring-assignment": 1,
-    "function-paren-newline": ["error", "multiline"],
-    "semi": ["error", "never"],
-    "spaced-comment": 0,
-    "comma-dangle": ["error", "never"],
-    "react/prop-types": 0,
-    "no-extra-boolean-cast": 0,
-    "quote-props": 0,
-    "object-curly-spacing": ["error", "always"],
-    "camelcase": 0,
-    "no-nested-ternary": 0,
-    "react/jsx-wrap-multilines": 0,
-    "object-curly-newline": 0,
-    "operator-linebreak": 0,
-    "no-unused-expressions": 0,
-    "global-require": 0,
-    "max-len": 0,
-    "import/no-cycle": 0,
-    "no-underscore-dangle": 0,
-    "no-return-assign": 0,
-    "import/prefer-default-export": 0,
-    "jsx-quotes": ["error", "prefer-double"],
-    "no-console": "error",
-    "arrow-parens": 0,
-    "eol-last": 0,
-    "react/destructuring-assignment": 0,
-    "react-native/no-unused-styles": 0,
-    "react-native/split-platform-components": 0,
-    "react-native/no-inline-styles": 0,
-    "react-native/no-color-literals": 0,
-    "react-native/no-raw-text": 0,
-    "consistent-return": 0
+  rules: {
+    'react/jsx-filename-extension': ['off'],
+    'react/jsx-one-expression-per-line': 0,
+    'linebreak-style': ['off'],
+    'implicit-arrow-linebreak': 0,
+    'no-undef': ['error'],
+    'react/sort-comp': ['off'],
+    'react/prefer-stateless-function': ['off'],
+    'react/destructuring-assignment': 1,
+    'function-paren-newline': ['error', 'multiline'],
+    semi: ['error', 'never'],
+    'spaced-comment': 0,
+    'comma-dangle': ['error', 'never'],
+    'react/prop-types': 0,
+    'no-extra-boolean-cast': 0,
+    'quote-props': 0,
+    'object-curly-spacing': ['error', 'always'],
+    camelcase: 0,
+    'no-nested-ternary': 0,
+    'react/jsx-wrap-multilines': 0,
+    'object-curly-newline': 0,
+    'operator-linebreak': 0,
+    'no-unused-expressions': 0,
+    'global-require': 0,
+    'max-len': 0,
+    'import/no-cycle': 0,
+    'no-underscore-dangle': 0,
+    'no-return-assign': 0,
+    'import/prefer-default-export': 0,
+    'jsx-quotes': ['error', 'prefer-double'],
+    'no-console': 'error',
+    'arrow-parens': 0,
+    'eol-last': 0,
+    'react/destructuring-assignment': 0,
+    'react-native/no-unused-styles': 0,
+    'react-native/split-platform-components': 0,
+    'react-native/no-inline-styles': 0,
+    'react-native/no-color-literals': 0,
+    'react-native/no-raw-text': 0,
+    'consistent-return': 0
   },
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "extensions": [".js", ".ios.js", ".android.js"]
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.ios.js', '.android.js']
       }
     }
   }
 }
 ```
+
+### step 3
+edit .prettierrc.js
+``` 
+module.exports = {
+  singleQuote: true,
+  printWidth: 120,
+  tabWidth: 2,
+  trailingComma: 'none',
+  bracketSpacing: true,
+  semi: false,
+  useTabs: false,
+  jsxBracketSameLine: false
+}
+```
+
+
 
 ### step 4
 Open up your package.json and make the following updates.
@@ -100,24 +112,8 @@ Open up your package.json and make the following updates.
 },
 ```
 
-
-### step 5
-Create `touch .prettierrc` 
-``` 
-{
-  "singleQuote": true,
-  "printWidth": 120,
-  "tabWidth": 2,
-  "trailingComma": "none",
-  "bracketSpacing": true,
-  "semi": false,
-  "useTabs": false,
-  "jsxBracketSameLine": false
-}
-```
-
 ### step 6
-create folder `src` and to transfer flie `src/App.js`
+create folder `src` and to transfer flie `src/index.js`
 
 ### step 7
 restart project 
