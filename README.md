@@ -31,7 +31,7 @@ module.exports = {
     'react/sort-comp': ['off'],
     'react/prefer-stateless-function': ['off'],
     'react/destructuring-assignment': 1,
-    'function-paren-newline': ['error', 'multiline'],
+    'function-paren-newline': 0,
     semi: ['error', 'never'],
     'spaced-comment': 0,
     'comma-dangle': ['error', 'never'],
