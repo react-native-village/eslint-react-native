@@ -2,7 +2,7 @@
 
 ### step 1
 ```
- yarn add eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-watch babel-core babel-eslint babel-preset-airbnb babel-preset-react-native pre-commit prettier prettier-eslint eslint-plugin-prettier eslint-config-prettier eslint-plugin-react eslint-plugin-react-native -D
+ yarn add eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-watch babel-core babel-eslint babel-preset-react-native pre-commit prettier prettier-eslint eslint-plugin-prettier eslint-config-prettier eslint-plugin-react eslint-plugin-react-native -D
 ```
 
 ### step 2
@@ -12,7 +12,7 @@ edit .eslintrc.js
 module.exports = {
   root: true,
   parser: 'babel-eslint',
-  extends: 'airbnb',
+  extends: '@react-native-community',
   plugins: ['react', 'react-native', 'jsx-a11y', 'import'],
   parserOptions: {
     ecmaFeatures: {
