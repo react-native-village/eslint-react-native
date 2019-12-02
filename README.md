@@ -12,7 +12,7 @@ edit .eslintrc.js
 module.exports = {
   root: true,
   parser: 'babel-eslint',
-  extends: 'airbnb',
+  extends: ['@react-native-community', 'airbnb', 'standard', 'prettier', 'plugin:flowtype/recommended'], 
   plugins: ['react', 'react-native', 'jsx-a11y', 'import'],
   parserOptions: {
     ecmaFeatures: {
