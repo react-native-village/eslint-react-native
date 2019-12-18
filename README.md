@@ -99,7 +99,8 @@ Open up your package.json and make the following updates.
     "ios": "react-native run-ios --simulator='iPhone SE'",
     "android": "react-native run-android",
     "lint": "esw src/**",
-    "lint-watch": "esw -w --changed src/**"
+    "lint-watch": "esw -w --changed src/**",
+     "postinstall":"cd ./ios && pod install && cd .."
   },
 "precommit": "lint",
 "prettier": {
