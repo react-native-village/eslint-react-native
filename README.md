@@ -116,7 +116,7 @@ Open up your package.json and make the following updates.
 ```
 
 ### step 5
-create folder `src` and to transfer flie `src/index.js`
+create folder `src` and to transfer file `src/index.js`
 
 ### step 6
 restart project 
