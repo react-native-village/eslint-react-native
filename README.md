@@ -102,17 +102,7 @@ Open up your package.json and make the following updates.
     "lint-watch": "esw -w --changed src/**",
      "postinstall":"cd ./ios && pod install && cd .."
   },
-"precommit": "lint",
-"prettier": {
-    "singleQuote": true,
-    "printWidth": 120,
-    "tabWidth": 2,
-    "trailingComma": "none",
-    "bracketSpacing": true,
-    "semi": false,
-    "useTabs": false,
-    "jsxBracketSameLine": false
-},
+"precommit": "lint"
 ```
 
 ### step 5
