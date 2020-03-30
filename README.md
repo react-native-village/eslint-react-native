@@ -102,7 +102,7 @@ Open up your package.json and make the following updates.
     "lint-watch": "esw -w --changed src/**",
      "postinstall":"cd ./ios && pod install && cd .."
   },
-"precommit": "lint"
+"precommit": "lint",
 ```
 
 ### step 5
